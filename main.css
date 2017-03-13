@@ -1,4 +1,4 @@
-html{
+html {
     background-color: #2B3A42;
 }
 
@@ -7,11 +7,11 @@ body {
     font-family: "Ubuntu", sans-serif;
 }
 
-#logo img{
-    width:210px;
-    height:65px;
-    margin-top:5px;
-    margin-right:10px;
+#logo img {
+    width: 210px;
+    height: 65px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 #navButtons {
@@ -28,7 +28,6 @@ body {
 .navButton {
     min-width: 15%;
     float: left;
-
 }
 
 .navButton a {
@@ -44,7 +43,6 @@ body {
     -webkit-transition: background-color .35s ease-out;
     color: #2B3A42;
     font-weight: 700;
-   
 }
 
 #current a {
@@ -68,25 +66,107 @@ article {
     width: 70%;
 }
 
-#barGraph h3{
-    color:#000000;    
+#barGraph h3 {
+    color: #000000;
 }
 
-#graph{
-        display: flex;
-    flex-basis: column nowrap;
-    justify-content: flex-end;
-    margin-top:50px;
-    margin-left:120px;
-    margin-right:120px;
-    margin-bottom:50px;
-    padding:20px;
-    background-color:#efefef;
-}
-
-#graph .about{
-    display:flex;
-    justify-content:flex-start;
+#graph .about {
+    display: flex;
+    justify-content: flex-start;
 }
 
 
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
