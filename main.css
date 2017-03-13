@@ -75,6 +75,22 @@ article {
     flex-basis: row nowrap;
 }
 
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+table * {
+    padding: 5px 3px;
+}
+
+td, th {
+    border: 1px solid #000;
+}
+
+.activeRow td {
+    background-color: #BDD4DE;
+}
+
 
 
 /* Slideshow container */
