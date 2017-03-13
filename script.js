@@ -1,7 +1,4 @@
-//var c = document.getElementById("myCanvas");
-//var ctx = c.getContext("2d");
-//
-//c.style.backgroundColor="white";
+
 var slideIndex = 1;
 var idle = false;
 setInterval(cycle, 5000);
