@@ -70,10 +70,6 @@ article {
     color: #000000;
 }
 
-#graph .about {
-    display: flex;
-    justify-content: flex-start;
-}
 
 
 /* Slideshow container */
@@ -169,4 +165,14 @@ article {
     to {
         opacity: 1
     }
+}
+
+footer{
+    text-align: center;
+    background-color: #3F5765;
+    padding-left: 10px;
+    padding-top:1px;
+    padding-bottom:1px;
+    margin-top:10px;
+    color: #efefef;
 }
