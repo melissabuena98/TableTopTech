@@ -3,6 +3,7 @@
 
 <head>
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans|Ubuntu" rel="stylesheet">
     <link href="main.css" type="text/css" rel="stylesheet">
     <title>About Us</title>
 </head>
@@ -32,38 +33,26 @@
                 Our customers come first. Making a profit is nice, but what difference will it make if our customers despise us? We offer installation, tech support, and even maintenance! If you are not satisfied with any of our products, contact us within 90 days, and we’ll refund you the purchase price as well as shipping and handling. We’ll even send some of our technicians to uninstall it and take it off your hands!
             </p>
 
-
-            <div id='barGraph'>
-
-                <h3>Most Popular Tabletop Games Our Tables Are Used For</h2>
-                    
-    <canvas id="myCanvas" width="500" height="400" style="border:4px solid #000000"> Your browser does not support the HTML5 canvas tag.</canvas>
-            
-    <script>
-
-        var canvas = document.getElementById('myCanvas');
-        var ctx = canvas.getContext('2d');
-        
-        
-        var data =[370, 172, 225, 320, 92, 40];
-        var width = 50;
-        var currX = 50;
-        var base = 200;
-        canvas.style.backgroundColor="#3F5765";
-        ctx.fillStyle = "#FF8C1D";
-        for(var i=0;i<data.length;i++){
-            var h = data[i];
-            ctx.fillRect(currX, canvas.height - h, width, h);
-            currX += width + 20;
-        }
-
-    </script>
-    <h3>|------------1---------2----------3---------4----------5---------6----------|</h3>
+            <div id='graphSection'>
+                <div id='barGraph'>
+                    <h3>Most Popular Tabletop Games Our Tables Are Used For</h2>
+                    <canvas id="myCanvas" width="500" height="400" style="border:4px solid #000000"> Your browser does not support the HTML5 canvas tag.</canvas>
+                    <script src="scripts/graph.js"></script>
+                    <h3>|------------1---------2----------3---------4----------5---------6----------|</h3>
+                </div>
+                <ol>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                </ol>
             </div>
         </article>
 
     </section>
 
 </body>
-    <footer><p>Copyright &#169;2017 TableTopTech</p></footer>
+<footer>
+    <p>Copyright &#169;2017 TableTopTech</p>
+</footer>
+
 </html>

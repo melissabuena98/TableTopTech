@@ -70,6 +70,11 @@ article {
     color: #000000;
 }
 
+#graphSection {
+    display: flex;
+    flex-basis: row nowrap;
+}
+
 
 
 /* Slideshow container */

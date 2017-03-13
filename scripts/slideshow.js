@@ -1,4 +1,3 @@
-
 var slideIndex = 1;
 var idle = false;
 setInterval(cycle, 5000);
