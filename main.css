@@ -68,5 +68,25 @@ article {
     width: 70%;
 }
 
+#barGraph h3{
+    color:#000000;    
+}
+
+#graph{
+        display: flex;
+    flex-basis: column nowrap;
+    justify-content: flex-end;
+    margin-top:50px;
+    margin-left:120px;
+    margin-right:120px;
+    margin-bottom:50px;
+    padding:20px;
+    background-color:#efefef;
+}
+
+#graph .about{
+    display:flex;
+    justify-content:flex-start;
+}
 
 

@@ -19,5 +19,54 @@
             </ul>
         </nav>
     </header>
+      <section id='graph'>
+    <div class="about">
+         <h3>Our History</h3> 
+        <p>
+        The founder of our company and current CEO, Caleb Carlile, once had a spark of brilliance: What if we create a giant version of a tablet and use it as a table? He gathered some of his engineers to develop this idea, and thus, the Table-let was born. The prototype was released in early-2017 and has since sold over 500,000 units nationwide. The company is now developing software tailor-made for the Table-let, such as digital board and tabletop games, multiplayer party games, and even a custom-made version of Microsoft Office! 
+        </p>
+        
+        <h3>Why Choose Us?</h3>
+        <p>
+        Our customers come first. Making a profit is nice, but what difference will it make if our customers despise us? We offer installation, tech support, and even maintenance! If you are not satisfied with any of our products, contact us within 90 days, and we’ll refund you the purchase price as well as shipping and handling. We’ll even send some of our technicians to uninstall it and take it off your hands!
+        </p>
+    </div>
+          
+          
+          <div id='barGraph'>
+          
+                <h3>Most Popular Tabletop Games Our Tables Are Used For</h2>
+                    
+    <canvas id="myCanvas" width="500" height="400" style="border:4px solid #000000"> Your browser does not support the HTML5 canvas tag.</canvas>
+            
+    <script>
+
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        
+        
+        var data =[370, 172, 225, 320, 92, 40];
+        var width = 50;
+        var currX = 50;
+        var base = 200;
+        canvas.style.backgroundColor="#3F5765";
+        ctx.fillStyle = "#FF8C1D";
+        for(var i=0;i<data.length;i++){
+            var h = data[i];
+            ctx.fillRect(currX, canvas.height - h, width, h);
+            currX += width + 20;
+        }
+
+    </script>
+    <h3>|------------1---------2----------3---------4----------5---------6----------|</h3>
+                  </div>
+
+           </section>
+          
+
+
+        
+        
+        
     </body>
 </html>
