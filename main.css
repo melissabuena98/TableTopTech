@@ -30,6 +30,9 @@ body {
     float: left;
 }
 
+
+
+
 .navButton a {
     display: block;
     color: #EFEFEF;
@@ -198,6 +201,37 @@ footer{
     color: #efefef;
 }
 
+.bottom{
+    text-align: center;
+    background-color: #3F5765;
+    padding-left: 10px;
+    padding-top:1px;
+    padding-bottom:1px;
+    margin-top:10px;
+    color: #efefef;
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
+
 #gameList{
     margin-top:60px;
+}
+
+#socialMedia{
+    display:flex;
+    flex-basis: row nowrap;
+}
+
+.snsIcon{
+    width:10%;
+    height:10%;
+    padding:10px;
+}
+
+.snsIcon:hover{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+        -webkit-transform:rotate(-15deg);
 }
