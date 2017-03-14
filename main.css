@@ -240,3 +240,25 @@ footer{
     width:100%;
     padding-bottom:20px;
 }
+
+#headline{
+    font-size: 42px;
+    text-align: center;
+    font-family: Orbitron;
+}
+
+#headline:hover{
+    -webkit-transition:1s ease-out;
+    color:#FF8C1D;
+}
+
+#specs:link{
+color:#FF8C1D;
+text-decoration: none;
+}
+#specs:visited{
+color:rgb(167, 93, 23);
+}
+#specs:hover{
+color:#BDD4DE;
+}
